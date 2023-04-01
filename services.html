@@ -1,0 +1,147 @@
+<html>
+<head>
+    <title> Nail Art </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/iconnail-2.png"/>
+	<script src="Myscript.js"></script>
+</head>
+
+<body >
+	<div class="container3">    <div id="hero-image"> </div>
+  <div class="container">
+    <nav class="nav" id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+   <aside  class="aside">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+  </aside>
+  <main  class="main">
+	<div class="button-wrapper">
+        <button href="#" class="button button-blue" onclick="setScheme('scheme1')">Change Color Scheme 1</button>
+         <button  href="#" class="button button-green" onclick="setScheme('scheme2')">Change Color Scheme 2</button>
+        <button href="#" class="button button-red" onclick="setScheme('scheme3')">Change Color Scheme 3</button>
+    </div>
+	<h1 id="num1"> Ayesha's Nail Art & Spa</h1>
+    <p> We at the nail salon invite anybody and everyone to come check out our services, and promise to do our very best to meet your expectations.
+        There are four people in our staff.
+        Almost all of the instruments we use are disposable and spotless. </p>
+	
+    <h1> Services</h1>
+	<div class="container1">
+	<table >
+		<tr>
+			<th>Type</th>
+			<th ><strong>Menicure</td>
+				<th ><strong>Pedicure</td>
+	
+		</tr>
+	
+		<tr>
+			<th>Regular</th>
+			<td>$15</td>
+			<td>$20</td>
+		</tr>
+		<tr>
+			<th>French</th>
+			<td>$23</td>
+			<td>$28</td>
+		</tr>
+		<tr>
+			<th>Parafin</th>
+			<td>$27</td>
+			<td>$32</td>
+		</tr>
+		<tr>
+		</table>
+		<table>      
+			<th colspan="2">Artificial Nails</th>
+		</tr>
+		<tr>
+			<th>Arcylic </th>
+			<td >$30</td>
+		</tr>
+		<tr>
+			<th>Gel</th>
+			<td >$40</td>
+		</tr>
+		<tr>
+			<th>Liquid Gel with Gel Polish </th>
+			<td >$55</td>
+		</tr>
+		<tr>
+			<th>Ombre</th>
+			<td >$45</td>
+		</tr>
+	</table>
+    <p>
+        <img alt="Menicure"  src="images/menicure.jpg"  width="250" height="150"/>
+        <img alt="Menicure"  src="images/menicure2.jpg" width="250" height="150"/>
+	</p>
+	<p>
+		<img alt="NailArt"  src="images/nail art3.jpg"  width="250" height="150"/>
+		<img alt="NailArt"  src="images/NailArt1.jpeg" width="250" height="150"/>
+	</p>
+	<p>
+        <img alt="pedicure"  src="images/Pedicure.jpg" width="500" height="200" />
+        <img alt="pedicure"  src="images/menipedi.jpeg" width="500" height="200" />
+    </p>
+
+    
+       
+
+<p>
+	<img alt="NailArt"  src="images/NailArt2.jpg" width="500" height="200" />
+	<img alt="NailArt"  src="images/nailart4.png" width="500" height="200" />
+	</p>
+</div>
+</main>
+  </div>
+  <script>
+	const text = document.getElementById('num1');
+	const textContent = text.textContent;
+	text.textContent = '';
+	let i = 0;
+	function typeWriter() {
+	  if (i < textContent.length) {
+		text.textContent += textContent.charAt(i);
+		i++;
+		setTimeout(typeWriter, 50);
+	  }
+	}
+	typeWriter();
+	
+	
+	
+	  const navbar = document.getElementById("navbar");
+	
+	  // Add glow effect on mouseover
+	  navbar.addEventListener("mouseover", () => {
+		navbar.style.boxShadow = "0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff";
+	  });
+	
+	  // Remove glow effect on mouseout
+	  navbar.addEventListener("mouseout", () => {
+		navbar.style.boxShadow = "none";
+	  });
+	
+	  var bgImage = document.getElementById("backgroundimage1");
+			bgImage.addEventListener("mouseover", function() {
+				bgImage.style.animation = "none";
+				bgImage.offsetHeight; // trigger reflow
+				bgImage.style.animation = "shake 0.5s infinite linear";
+			});
+		
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<html>
+<head>
+    <title> Nail Art </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/iconnail-2.png"/>
+    <script src="Myscript.js"></script>
+</head>
+
+<body >
+  <div class="container3">     <div id="hero-image"> </div>
+  <div class="container">
+    <nav class="nav" id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+   <aside  class="aside">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+  </aside>
+  <main  class="main">
+    <div class="button-wrapper">
+      <button href="#" class="button button-blue" onclick="setScheme('scheme1')">Change Color Scheme 1</button>
+       <button  href="#" class="button button-green" onclick="setScheme('scheme2')">Change Color Scheme 2</button>
+      <button href="#" class="button button-red" onclick="setScheme('scheme3')">Change Color Scheme 3</button>
+  </div>
+    <h1 id="num1"> Modern Trends in Nail Art for the Year 2023</h1>
+<h2 > Nail Art AI Technology</h2>
+<div class="container1">
+<p>Clockwork is the first robot to paint nails, and I recently gave it a try.
+    The cutting-edge technology and equipment are indicative of a broader movement toward algorithmically streamlining the classic manicure.
+    Tom Bachik, a celebrity manicurist with over 30 years of expertise, says that there are a few businesses working on nail-painting equipment, but that progress is slow.
+    Bringing "that kind of technology" to the user, as Bachik puts it, "has a number of impediments in place."
+    "Because everyone's nails are shaped differently, it's challenging to develop a general algorithm for learning how to paint them evenly and precisely.
+    Unfortunately, we still lack the necessary technologies to make this a reality." </p>
+      <video width="70%" height="50%" controls>
+        <source src="" type="video/mp4">
+        <source src="videos/clockwork.mp4" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+</div>  
+        <h2 > NIMBLE A AUTOMATIC NAIL PAINTER </h2>
+        <div class="container1">
+        <p>Nimble is a revolutionary device that can scan your nails, paint them, and dry them all at the same time.
+          The Nimble device scans your nails in two dimensions and three to understand their precise dimensions, as well as their shape and curvature.
+          A base coat, two coats of color, and a top coat are meticulously applied by Nimble's intelligent robotic arm for a manicure with a rich, high-shine finish that resists chips for up to 7 days. </p>
+        
+          <iframe src="https://www.youtube.com/watch?v=o2O7MP9vfl8" height="300px" width="450" allowfullscreen></iframe>
+  </div>
+
+      
+        <h2 >Heart Vinyl Nail Stencil Application</h2>
+        <audio controls>
+           
+            <source src="Audio/syntehtic.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+
+      <h2 > Nail Art Technolgy Products</h2>
+      <ul>
+        <div class="container2"> 
+        <li> Digital Automatic Nail Art Printer 3D 
+        <a href="https://www.amazon.de/-/en/Automatic-Portable-Painting-Transfer-Wireless/dp/B08L4XZFSY">
+        <img alt="pedicure"  src="images/technologyProduct2.jpg" width="350" height="200" /> </a> </li>
+         <li>3d Printer Automatic Nail Painting Machine 
+        <a href="https://www.alibaba.com/product-detail/2022-Newest-Technology-Professional-Best-Price_1600211188670.html">  
+            <img alt="pedicure"  src="images/technologyProduct4.webp" width="350" height="200" /> </a> </li>
+         <li> Janolia Nail Dryer Nail Lamp 
+         <a href="https://www.amazon.de/dp/B0989SW2KS/ref=syn_sd_onsite_desktop_0?ie=UTF8&psc=1&pd_rd_plhdr=t">
+        <img alt="pedicure"  src="images/technologyProduct1.jpg" width="350" height="200" /> </a> </li>
+      </div>
+    </ul>
+
+  </main>
+  <script>
+    const text = document.getElementById('num1');
+    const textContent = text.textContent;
+    text.textContent = '';
+    let i = 0;
+    function typeWriter() {
+      if (i < textContent.length) {
+        text.textContent += textContent.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50);
+      }
+    }
+    typeWriter();
+    
+    
+    
+      const navbar = document.getElementById("navbar");
+    
+      // Add glow effect on mouseover
+      navbar.addEventListener("mouseover", () => {
+        navbar.style.boxShadow = "0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff";
+      });
+    
+      // Remove glow effect on mouseout
+      navbar.addEventListener("mouseout", () => {
+        navbar.style.boxShadow = "none";
+      });
+    
+      var bgImage = document.getElementById("backgroundimage1");
+        bgImage.addEventListener("mouseover", function() {
+          bgImage.style.animation = "none";
+          bgImage.offsetHeight; // trigger reflow
+          bgImage.style.animation = "shake 0.5s infinite linear";
+        });
+        
+    </script>
+  </div>
+</body>
+
+
+</html>

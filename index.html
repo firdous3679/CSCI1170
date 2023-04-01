@@ -1,0 +1,124 @@
+
+<html>
+<head>
+    <title> Nail Art </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/iconnail-2.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="Myscript.js"></script>
+
+</head>
+
+<body >
+
+    <div class="container3">    <div id="hero-image"> </div>
+
+    <div class="container">
+        <nav class="nav" id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+   
+    
+   <aside  class="aside">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+  </aside>
+  <main  class="main">
+    <div class="button-wrapper">
+        <button href="#" class="button button-blue" onclick="setScheme('scheme1')">Change Color Scheme 1</button>
+         <button  href="#" class="button button-green" onclick="setScheme('scheme2')">Change Color Scheme 2</button>
+        <button href="#" class="button button-red" onclick="setScheme('scheme3')">Change Color Scheme 3</button>
+    </div>
+    <h1 id="num1">Ayesha's Nail Art & Spa</h1>
+    <p>
+    <img alt="Menicure"  src="images/spa5.jpg"  width="80%" height="30%" /> </p>
+        
+    <p>Taking care of, fixing, painting, decorating, and elongating nails are all aspects of Nail Art technology (Fingers and Toes).
+          In recent years, press-on nails have evolved from a questionable beauty trend to a subtle style statement.
+      This is because modern press-ons are "more flexible," and are designed to "fit a larger variety of natural nails," as Bachik puts it.
+      Press-on nail art from businesses like Chillhouse and Dashing Diva looks so good, you might not even realize it wasn't painted by hand.
+      Press-on nail designs, Bachik explains, follow fashion trends.
+      Most of these would be prohibitively expensive and time-consuming to obtain at a salon. 
+        </p>
+        <div class="container2">
+          <div id="imageWrapper" style="white-space: nowrap;">
+            <img src="images/nailImag1.png" alt="Nail Image" width="300" height="200">
+            <img src="images/nailimage2.png" alt="Nail Image" width="300" height="200">
+            <img src="images/nailImage3.png" alt="Nail Image" width="300" height="200">
+            <img src="images/nailImag1.png" alt="Nail Image" width="300" height="200">
+            <img src="images/nailimage2.png" alt="Nail Image" width="300" height="200">
+            <img src="images/nailImage3.png" alt="Nail Image" width="300" height="200">
+          </div>
+        </div>
+        <h2 > BE SAFE AND WELL</h2>
+      <ol>
+      
+      
+      <li> Putting sneeze barriers on all of our tables so that nobody gets sick.
+        Seating distances for all clients will be 6 feet.</li>
+      
+        <li>All areas of the store will have hand sanitizers for your convenience.</li>
+      
+          <li>Employees are expected to maintain a consistently clean and sanitary business.</li>
+      
+            <li> Keep tabs on everyone's health and make sure the sick ones stay at home.</li>
+      
+              <li>Please keep personal guests to a minimum (one) for the safety of our customers and staff.</li>
+      
+                <li>Everyone who enters must wears a face mask. </li>
+      </ol>
+  </main>
+  </div>
+<script>
+  
+var text = document.getElementById("num1");
+var textContent = text.textContent;
+text.textContent = '';
+let i = 0;
+function typeWriter() {
+  if (i < textContent.length) {
+    text.textContent += textContent.charAt(i);
+    i++;
+    setTimeout(typeWriter, 50);
+  }
+}
+typeWriter();
+
+
+
+ var navbar = document.getElementById("navbar");
+
+  // Add glow effect on mouseover
+  navbar.addEventListener("mouseover", () => {
+    navbar.style.boxShadow = "0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff";
+  });
+
+  // Remove glow effect on mouseout
+  navbar.addEventListener("mouseout", () => {
+    navbar.style.boxShadow = "none";
+  });
+
+
+  let imgWidth = 300;
+  let imageWrapper = document.getElementById("imageWrapper");
+  let currentPos = 0;
+  let maxPos = (imageWrapper.children.length - 3) * imgWidth;
+  
+  setInterval(() => {
+    currentPos = (currentPos - imgWidth) % (maxPos + imgWidth);
+    imageWrapper.style.transform = `translateX(${currentPos}px)`;
+  }, 3000);
+</script>
+
+</body>
+
+</html>

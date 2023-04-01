@@ -1,0 +1,89 @@
+
+<html>
+<head>
+    <title> Nail Art </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/iconnail-2.png"/>
+    <script src="Myscript.js"></script>
+</head>
+
+<body >
+  <div class="container3">     <div id="hero-image"> </div>
+  <div class="container">
+    <nav class="nav" id="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+ 
+  
+ <aside  class="aside">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</aside>
+<main  class="main">
+  <div class="button-wrapper">
+    <button href="#" class="button button-blue" onclick="setScheme('scheme1')">Change Color Scheme 1</button>
+     <button  href="#" class="button button-green" onclick="setScheme('scheme2')">Change Color Scheme 2</button>
+    <button href="#" class="button button-red" onclick="setScheme('scheme3')">Change Color Scheme 3</button>
+</div>
+  <h1 id="num1"> Ayesha's Nail Art & Spa</h1>
+    
+    <h2> Contact Us</h2>
+    <div class="container1">
+      <form id="contact-form" action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+  
+        <input type="submit" id="submit-button" value="submit">
+      </form>
+    </div>
+      
+  </main>
+  <script>
+    const text = document.getElementById('num1');
+    const textContent = text.textContent;
+    text.textContent = '';
+    let i = 0;
+    function typeWriter() {
+      if (i < textContent.length) {
+        text.textContent += textContent.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50);
+      }
+    }
+    typeWriter();
+    
+    
+    
+      const navbar = document.getElementById("navbar");
+    
+      // Add glow effect on mouseover
+      navbar.addEventListener("mouseover", () => {
+        navbar.style.boxShadow = "0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff";
+      });
+    
+      // Remove glow effect on mouseout
+      navbar.addEventListener("mouseout", () => {
+        navbar.style.boxShadow = "none";
+      });
+    
+
+
+    </script>
+</body>
+
+</html>
