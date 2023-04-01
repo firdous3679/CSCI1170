@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color:powderblue;"
+    background-color:powderblue;
     margin: 0;
     padding: 0;
     }
@@ -197,11 +197,11 @@ form {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width:15%;
-    position:center;
+    width: 15%;
+    margin: 0 auto; /* Center horizontally */
     transition: background-color 0.3s ease;
   }
-  
+
   input[type="submit"]:hover {
     background-color: #400267;
   }
@@ -243,6 +243,7 @@ form {
     100% {
       transform: translateX(calc(-300px * 3));
     }
+  }
 
 
   .container3 {
